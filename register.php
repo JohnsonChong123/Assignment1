@@ -53,7 +53,7 @@
                             Sinovac						</a>
                     </li>
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="register.html">
+                        <a class="nav-link" href="register.php">
                             Registeration					</a>
                     </li>
 
