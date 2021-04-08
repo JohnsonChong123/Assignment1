@@ -1,3 +1,4 @@
 # Assignment 1
 
-About covid-19 info
+Sprint 1-1
+Sprint 1-2
