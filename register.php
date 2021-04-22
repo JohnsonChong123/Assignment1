@@ -34,7 +34,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
                   
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">
+                        <a class="nav-link" href="home.html">
                             Home						</a>
                     </li>
 
@@ -53,7 +53,7 @@
                             Sinovac						</a>
                     </li>
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="register.php">
+                        <a class="nav-link active" href="register.php">
                             Registeration					</a>
                     </li>
 
