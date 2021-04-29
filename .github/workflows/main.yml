@@ -1,7 +1,7 @@
 name: Code-Validation-Test
 
 on: 
-  # pull_request:
+  # pull_requestasdas:
   push:
     branches:
     - main
