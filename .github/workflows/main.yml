@@ -1,10 +1,10 @@
 name: Code-Validation-Test
 
 on: 
-  # pull_requestasdas:
+  # pull_requests:
   push:
     branches:
-    - main
+    - master
 
 jobs:
   super-lint:
