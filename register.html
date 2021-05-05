@@ -34,7 +34,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
                   
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">
+                        <a class="nav-link" href="home.html">
                             Home						</a>
                     </li>
 
@@ -53,7 +53,7 @@
                             Sinovac						</a>
                     </li>
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="register.php">
+                        <a class="nav-link" href="check_registeration.html">
                             Registeration					</a>
                     </li>
 
@@ -84,12 +84,20 @@
                     <div class="cdc-2020-bar container">
 							
                     </div>
-                    <div class="beautiful bs-callout bs-callout-success">
-                       <h4>Success</h4>
-                          <p>
-                            Congratulation on registering the COVID-19 Vaccination Program 
-                        </p>
-                    </div>
+                    <section class="register-photo">
+                        <div class="form-container">
+                            <form action="reg_process.php" method="post">
+                                <h3>
+                                    Name:
+                                    <input type="text" name="input_name"></input>
+                                    <br>
+                                    NRIC:
+                                    <input type="text" name="input_nric"></input>
+                                </h3>
+                                <button type="submit">Register</button>
+                            </form> 
+                        </div>
+                    </section>
                     
                 </div>
             </div>
@@ -121,20 +129,3 @@
     
 </body>
 </html>
-
-<?php
-    extract($_REQUEST);
-    $file=fopen("form-save.txt","a");
-
-    fwrite($file,"name :");
-    fwrite($file, $name ."\n");
-    fwrite($file,"Email :");
-    fwrite($file, $email ."\n");
-    fwrite($file,"Contact Number :");
-    fwrite($file, $number ."\n");
-    fwrite($file,"Address :");
-    fwrite($file, $address ."\n");
-    fwrite($file," ");
-    fclose($file);
-    
- ?>

@@ -53,7 +53,7 @@
                             Sinovac						</a>
                     </li>
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link active" href="register.php">
+                        <a class="nav-link" href="check_registeration.html">
                             Registeration					</a>
                     </li>
 
@@ -86,20 +86,13 @@
                     </div>
                     <section class="register-photo">
                         <div class="form-container">
-                            <form method="post" action="success.php">
-                                <h2 class="text-center"><strong>Register For Vaccination</strong></h2>
-                                <div class="form-group"><input type="text" class="form-control" name="name" placeholder="Your Fullname" required/></div>
-                                <div class="form-group"><input type="email" class="form-control" name="email" placeholder="Email" required/></div>
-                                <div class="form-group"><input type="number" class="form-control" name="number" placeholder="Contact Number" required/></div>
-                                <div class="form-group"><input type="text" class="form-control" name="address" placeholder="Address" required/></div>
-
-                                
-                                <div class="form-group">
-                                    <div class="form-check"><label class="form-check-label"><input type="checkbox" class="form-check-input" />I agree to the license terms.</label></div>
-                                </div>
-                                
-                                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div>
-                            </form>
+                            <form action="reg_check.php" method="post">
+                                <h3>
+                                    NRIC:
+                                    <input type="text" name="input_nric"></input>
+                                </h3>
+                                <button type="submit">Check</button>
+                            </form> 
                         </div>
                     </section>
                     
@@ -133,20 +126,3 @@
     
 </body>
 </html>
-
-<?php
-    extract($_REQUEST);
-    $file=fopen("form-save.txt","a");
-
-    fwrite($file,"name :");
-    fwrite($file, $name ."\n");
-    fwrite($file,"Email :");
-    fwrite($file, $email ."\n");
-    fwrite($file,"Contact Number :");
-    fwrite($file, $number ."\n");
-    fwrite($file,"Address :");
-    fwrite($file, $address ."\n");
-    fwrite($file," ");
-    fclose($file);
- ?>
-
